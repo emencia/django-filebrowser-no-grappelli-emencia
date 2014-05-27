@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='django-filebrowser',
+    name='django-filebrowser-no-grappeli',
     version='3.5.7',
     description='Media-Management no Grappelli',
     long_description = read('README.rst'),
