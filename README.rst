@@ -3,6 +3,8 @@ Django FileBrowser
 
 **Media-Management**. (based on https://github.com/sehmaschine/django-filebrowser)
 
+**Yet another "django-filebrowser" fork to release an updated `Pypi package <https://pypi.python.org/pypi/django-filebrowser-no-grappeli-emencia>`_ with a current version**
+
 The FileBrowser is an extension to the `Django <http://www.djangoproject.com>`_ administration interface in order to:
 
 * browse directories on your server and upload/delete/edit/rename files.
