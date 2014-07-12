@@ -39,6 +39,7 @@
                     '<a class="qq-upload-cancel" href="#">{% trans "Cancel" %}</a>' +
                     '<span class="qq-upload-failed-text">{% trans "Failed" %}</span>' +
                     '<div class="progress-bar"><div class="content"></div></div>' +
+                    '<span class="qq-upload-complete-text" style="display: none;">{% trans "Complete" %}</span>' +
                 '</div>',
 
                 params: { 'csrf_token': '{{ csrf_token }}',
@@ -76,6 +77,7 @@
                     bar.css('width', new_width);
                 },
                 onComplete: function(id, fileName, resp){
+                    this.getItem(id).find('.qq-upload-complete-text').show();
                     // if (resp.success) {
                     //     this.getItem(id).fadeOut('slow');
                     // }
@@ -142,6 +144,7 @@
                     </div>
                 {% endif %}
             </fieldset>
+            <div class="qq-upload-button"><a href="{% url 'filebrowser:fb_browse' %}{% query_string %}" style="color:#fff;">{% trans "Done" %}</a></div>
         </div>
     </form>
 </div>
